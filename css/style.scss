@@ -35,17 +35,8 @@ a {
         color: $light;
         text-decoration: none;
     }
-
-    .cta{
-
-        color: $light;
-
-        &:hover{
-
-            color: $text;
-        }
-    }
 }
+
 
 h1,
 h2,
@@ -132,14 +123,15 @@ span{
 
 img {
     max-width: 100%;
+    object-fit: cover;
 }
 
 .p-1{
-    padding: 120px;
+    padding: 120px 0;
 }
 
 .p-12{
-    padding: 120px 0;
+    padding: 80px 0;
 }
 
 .p-22{
@@ -162,7 +154,6 @@ img {
     img{
         height: 520px;
         min-width: 100%;
-        object-fit: cover;
     }
 }
 
@@ -183,7 +174,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.3px;
 
-    a{
+    a, .explore{
             
         font-size: 13px;
         font-weight: 500;
@@ -197,7 +188,7 @@ img {
         display: inline-block;
         position: relative;
 
-        a{
+        a, .explore{
             
             color: $notwhite;
             line-height: 1.4;
@@ -221,6 +212,18 @@ img {
             
             transform: scaleX(0);
             transform-origin: bottom right;
+        }
+
+        &.dark{
+            a, .explore{
+                        
+                color: $light;
+            }
+
+            &::after{
+
+                background-color: $light;
+            }
         }
     }
 
@@ -251,6 +254,7 @@ img {
     
     color: $text;
     height: 100%;
+    font-family: "Work sans";
     &:hover {
         color: $light;
     }
@@ -502,7 +506,6 @@ nav{
 
         height: 420px;
         width: 420px;
-        object-fit: cover;
         margin-top: 120px;
     }
 
@@ -510,7 +513,6 @@ nav{
 
         height: 560px;
         width: 420px;
-        object-fit: cover;
         margin: 72px 0;
     }
 }
@@ -662,7 +664,6 @@ nav{
 
         width: 100%;
         height: 224px;
-        object-fit: cover;
         margin-top: 8px;
     }
 
@@ -707,6 +708,14 @@ nav{
     }
 }
 
+.newsUpdates__wrap.dedicatedPage{
+
+    img{
+
+        height: 280px;
+    }
+}
+
 .homeGallery__wrap{
     
     display: grid;
@@ -725,7 +734,6 @@ nav{
     img {
         width: calc(100% + 1px);
         height: 360px;
-        object-fit: cover;
     }
 }
 
@@ -1023,7 +1031,6 @@ footer{
     img{
         padding-top: 112px;
         height: 100vh;
-        object-fit: cover;
         z-index: -2;
     }
 
@@ -1041,13 +1048,19 @@ footer{
 
 .mission{
 
-    .mission__head{
+    background-color: #7fffd446;
+    
+    .mission__wrap{
 
         margin-top: 32px;
 
         img{
 
-            width: 64px;
+            width: 88px;
+            padding: 16px;
+            border: 1px #c0391a;
+            border-style: dotted;
+            border-radius: 10px;
         }
     }
 
@@ -1055,17 +1068,77 @@ footer{
 
         font-weight: 600;
         padding-top: 32px;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: "Montserrat";
     }
 }
 
-iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100vw;
-    height: 250vh;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    overflow: hidden;
+
+.team{
+
+    text-align: center;
+
+    .team__wrap{
+
+        .team__photo{
+
+            img{
+
+                height: 280px;
+                width: 100%;
+            }
+        }
+
+        .about__team{
+
+            margin-top: 32px;
+
+            .desg{
+
+                font-weight: 600;
+                font-size: 14px;
+                text-transform: uppercase;
+                font-family: "Montserrat";
+            }
+
+            h4{
+
+                margin-top: 12px;
+                margin-bottom: 13px;
+                line-height: 1.2;
+            }
+
+            span{
+
+                line-height: 1.6;
+            }
+        }
+    }
+}
+
+
+.gallerySection{
+
+    .uk-slideshow-items {
+
+        height: 80vh;
+    }
+
+    .uk-thumbnav {
+        
+        justify-content: center;
+        gap: 18px;
+
+        *>::after {
+            
+            background-image: linear-gradient(rgba(0, 70, 110, 0), rgba(0, 70, 110, 0.008), rgba(0, 70, 110, 0.02), rgba(0, 70, 110, 0.601), rgba(0, 70, 110, 0.82), rgba(0, 70, 110, 0.9));
+            transition: 1.2s;
+        }
+
+        img{
+            
+            width: 120px;
+            height: 80px;
+        }
+    }
 }

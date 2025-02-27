@@ -28,14 +28,6 @@ a:hover {
   text-decoration: none;
 }
 
-a .cta {
-  color: #c0391a;
-}
-
-a .cta:hover {
-  color: #08133d;
-}
-
 h1,
 h2,
 h3,
@@ -133,14 +125,16 @@ span {
 
 img {
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-1 {
-  padding: 120px;
+  padding: 120px 0;
 }
 
 .p-12 {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .p-22 {
@@ -162,8 +156,6 @@ img {
 .uk-slider img, .swiper img {
   height: 520px;
   min-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media (min-width: 1200px) {
@@ -180,7 +172,7 @@ img {
   letter-spacing: 0.3px;
 }
 
-.cta a {
+.cta a, .cta .explore {
   font-size: 13px;
   font-weight: 500;
   line-height: 1;
@@ -193,7 +185,7 @@ img {
   position: relative;
 }
 
-.cta .inCard a {
+.cta .inCard a, .cta .inCard .explore {
   color: #fbfbfb;
   line-height: 1.4;
 }
@@ -223,6 +215,14 @@ img {
           transform-origin: bottom right;
 }
 
+.cta .inCard.dark a, .cta .inCard.dark .explore {
+  color: #c0391a;
+}
+
+.cta .inCard.dark::after {
+  background-color: #c0391a;
+}
+
 .cta a.btn {
   min-width: 180px;
   padding: 15px 0;
@@ -247,6 +247,7 @@ img {
 .uk-navbar-nav > li > a {
   color: #08133d;
   height: 100%;
+  font-family: "Work sans";
 }
 
 .uk-navbar-nav > li > a:hover {
@@ -479,16 +480,12 @@ nav .uk-navbar-left .uk-navbar-nav li:first-child {
 .intro .sq__picture img {
   height: 420px;
   width: 420px;
-  -o-object-fit: cover;
-     object-fit: cover;
   margin-top: 120px;
 }
 
 .intro .hr__picture img {
   height: 560px;
   width: 420px;
-  -o-object-fit: cover;
-     object-fit: cover;
   margin: 72px 0;
 }
 
@@ -635,8 +632,6 @@ nav .uk-navbar-left .uk-navbar-nav li:first-child {
 .newsUpdates__wrap img {
   width: 100%;
   height: 224px;
-  -o-object-fit: cover;
-     object-fit: cover;
   margin-top: 8px;
 }
 
@@ -668,6 +663,10 @@ nav .uk-navbar-left .uk-navbar-nav li:first-child {
   height: 560px;
 }
 
+.newsUpdates__wrap.dedicatedPage img {
+  height: 280px;
+}
+
 .homeGallery__wrap {
   display: -ms-grid;
   display: grid;
@@ -690,8 +689,6 @@ nav .uk-navbar-left .uk-navbar-nav li:first-child {
 .homeGallery__wrap img {
   width: calc(100% + 1px);
   height: 360px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 footer {
@@ -926,8 +923,6 @@ footer .footerEnd__section .uk-flex {
 .donationDetails img {
   padding-top: 112px;
   height: 100vh;
-  -o-object-fit: cover;
-     object-fit: cover;
   z-index: -2;
 }
 
@@ -937,29 +932,79 @@ footer .footerEnd__section .uk-flex {
   margin-right: 2px;
 }
 
-.mission .mission__head {
+.mission {
+  background-color: #7fffd446;
+}
+
+.mission .mission__wrap {
   margin-top: 32px;
 }
 
-.mission .mission__head img {
-  width: 64px;
+.mission .mission__wrap img {
+  width: 88px;
+  padding: 16px;
+  border: 1px #c0391a;
+  border-style: dotted;
+  border-radius: 10px;
 }
 
 .mission .mission__title {
   font-weight: 600;
   padding-top: 32px;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: "Montserrat";
 }
 
-iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 250vh;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  pointer-events: none;
-  overflow: hidden;
+.team {
+  text-align: center;
+}
+
+.team .team__wrap .team__photo img {
+  height: 280px;
+  width: 100%;
+}
+
+.team .team__wrap .about__team {
+  margin-top: 32px;
+}
+
+.team .team__wrap .about__team .desg {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+}
+
+.team .team__wrap .about__team h4 {
+  margin-top: 12px;
+  margin-bottom: 13px;
+  line-height: 1.2;
+}
+
+.team .team__wrap .about__team span {
+  line-height: 1.6;
+}
+
+.gallerySection .uk-slideshow-items {
+  height: 80vh;
+}
+
+.gallerySection .uk-thumbnav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 18px;
+}
+
+.gallerySection .uk-thumbnav * > ::after {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 70, 110, 0)), color-stop(rgba(0, 70, 110, 0.008)), color-stop(rgba(0, 70, 110, 0.02)), color-stop(rgba(0, 70, 110, 0.601)), color-stop(rgba(0, 70, 110, 0.82)), to(rgba(0, 70, 110, 0.9)));
+  background-image: linear-gradient(rgba(0, 70, 110, 0), rgba(0, 70, 110, 0.008), rgba(0, 70, 110, 0.02), rgba(0, 70, 110, 0.601), rgba(0, 70, 110, 0.82), rgba(0, 70, 110, 0.9));
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.gallerySection .uk-thumbnav img {
+  width: 120px;
+  height: 80px;
 }
 /*# sourceMappingURL=style.css.map */
