@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hapsa Globe</title>
+    
+    <link rel="shortcut icon" href="/images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.21.16/css/uikit.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <header uk-sticky="show-on-up: true; animation: uk-animation-slide-top" class="header uk-sticky" >
+        <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m">
+            <div class="uk-container uk-container-xlarge">
+                <div uk-navbar="" class="uk-navbar">
+
+                    <div class="uk-navbar-left">
+
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <a href="/index.html" class="uk-navbar-item uk-logo">
+                                    <img class="full" src="/images/logo.png" alt="">
+                                </a>
+                            </li>
+                            <li><a href="/">Home</a></li>
+                            <li class="uk-active"><a href="/about.html">About Us</a></li>
+                            
+                            <li><a href="/projects.html">HAPSA Projects</a></li>
+                            <li><a href="/news.html" >News Coverage</a></li>
+                            <li><a href="/gallery.html">Gallery</a></li>
+                            <li><a href="./volunteer.html#faqs">FAQ</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="uk-navbar-center">
+
+                        <ul class="uk-navbar-nav">
+                            
+                        </ul>
+
+                    </div>
+
+                    <div class="uk-navbar-right">
+                        <a href="" class="uk-navbar-item" target="_blank">
+                            <span uk-icon="icon: facebook" class="uk-icon"></span>
+                        </a>
+                        <a href="" class="uk-navbar-item" target="_blank">
+                            <span uk-icon="icon: youtube" class="uk-icon"></span>
+                        </a>
+                        <a href="" class="uk-navbar-item" target="_blank">
+                            <span uk-icon="icon: instagram" class="uk-icon"></span>
+                        </a>
+                        <div class="cta">
+                            <a href="./donate.html" class="btn">Donate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+
+    <div class="music-control">
+        <div class="icon">
+            <img src="./images/bw3I80awAa.gif" alt="">
+        </div>
+        <div class="options">
+            <a href="https://youtu.be/wzZNU_IFgmc?si=isTfhnJNEJ2ZcGpY" target="_blank">watch video</a>
+            <button id="play-pause-btn">Pause</button>
+        </div>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="./images/trimmedAudio.mp3" type="audio/mpeg">
+    </audio>
+
+    
+    <section class="non banner" style="background-image: url('./images/aboutus.png')">
+        <div class="overlay"></div>
+        <div class="uk-container">
+            <div class="bannerText">
+                <div class="text">
+                    <ul class="breadcrumb uk-flex">
+                        <li>
+                            <a href="./index.html">Home</a>
+                            <span uk-icon="icon: chevron-right"></span>
+                        </li>
+                        <li>
+                            About Us
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="home_intro p-1">
+        <div class="uk-container">
+            
+            <div class="uk-text-center uk-margin-auto uk-margin-auto-vertical uk-width-3-5@s">
+                <h1>Strengthening Health systems in Nepal</h1>
+                <p>
+                    HAPSA, a non-profit organization, works to strengthen Nepal's health system by improving primary healthcare and 
+                    advancing public health in collaboration with government bodies. Comprising young professionals from around the 
+                    world, HAPSA champions equitable health services for all. 
+                </p>
+                <p>
+                    Guided by core values, we prioritize patient-centered 
+                    care, government accountability in reducing out-of-pocket health expenses, and local health rights awareness.
+                    Our innovative model integrates community participation, supports health staff, and fosters collaboration with the 
+                    government to build a community-focused health system. 
+                </p>
+            </div>
+        </div>
+    </section>    
+
+
+    <section class="mission">
+        <div class="uk-container">
+            <div class="uk-grid">
+                <div class="uk-width-1-3">
+                    <h2>Our Mission</h2>
+                    <p>Empowering local self-advocacy, strengthening government partnerships, and providing technical and material support to drive sustainable health improvements.</p>
+                </div>
+                <div class="uk-width-2-3">
+                    <div class="uk-grid uk-child-width-1-2">
+                        <div class="mission__head">
+                            <div class="mission__icon">
+                                <img src="./images/hospital.png" alt="">
+                            </div>
+                            <div class="mission__title">Equitable Healthcare for All</div>
+                            <p>We are committed to high-quality, patient- and community-centered health services while
+                                advocating for government accountability in reducing financial burdens on citizens.
+                            </p>
+                        </div>
+                        <div class="mission__head">
+                            <div class="mission__icon">
+                                <img src="./images/education.png" alt="">
+                            </div>
+                            <div class="mission__title">Health Education & Awareness</div>
+                            <p>We prioritize spreading health rights awareness, promoting education, and fostering 
+                                preventive care to build a healthier future for the next generation.
+                            </p>
+                        </div>
+                        <div class="mission__head">
+                            <div class="mission__icon">
+                                <img src="./images/collaboration.png" alt="">
+                            </div>
+                            <div class="mission__title">Collaboration & Integration</div>
+                            <p>
+                                We work closely with government bodies, communities, and multi-sectoral partners 
+                                to create sustainable, community-driven healthcare solutions.
+                            </p>
+                        </div>
+                        <div class="mission__head">
+                            <div class="mission__icon">
+                                <img src="./images/project-management.png" alt="">
+                            </div>
+                            <div class="mission__title">Innovation & Ethical Practices</div>
+                            <p>We embrace diversity, independent thinking, and ethical approaches, ensuring 
+                                adaptable and innovative strategies in all aspects of our work.
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="homeHapsaProjects uk-margin-large-bottom">
+        <div class="uk-container">
+            <h2>Hapsa Projects</h2>
+            <p>
+                HAPSA undertakes projects aimed at strengthening Nepal’s health system by enhancing primary healthcare services and 
+                promoting public health awareness. These initiatives focus on supporting health facility staff, fostering community 
+                participation, and collaborating with government bodies to create equitable, community-centric healthcare solutions. 
+            </p>
+            <div class="projectsSlider__wrap">
+                <div class="swiper home__projects">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="uk-transition-toggle">  
+                                <div class="project__card">
+                                    <div class="projectCard__image">
+                                        <img src="/images/covid19relief.jpg">
+                                    </div>
+                                    <div class="uk-panel">
+                                        <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
+                                            <h4>Jajarkot Earthquake Relief</h4>
+                                            <div class="cta">
+                                                <div class="inCard">
+                                                    <a href="">Explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uk-transition-toggle">
+                                <div class="project__card">
+                                    <div class="projectCard__image">
+                                        <img src="/images/melamchirelief1.jpg">
+                                    </div>
+                                    <div class="uk-panel">
+                                        <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
+                                            <h4>Melamchi Relief</h4>
+                                            <div class="cta">
+                                                <div class="inCard">
+                                                    <a href="">Explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uk-transition-toggle">
+                                <div class="project__card">
+                                    <div class="projectCard__image">
+                                        <img src="/images/melamchirelief2.jpg">
+                                    </div>
+                                    <div class="uk-panel">
+                                        <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
+                                            <h4>Melamchi Relief</h4>
+                                            <div class="cta">
+                                                <div class="inCard">
+                                                    <a href="">Explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uk-transition-toggle">
+                                <div class="project__card">
+                                    <div class="projectCard__image">
+                                        <img src="/images/melamchirelief3.jpg">
+                                    </div>
+                                    <div class="uk-panel">
+                                        <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
+                                            <h4>Melamchi Relief</h4>
+                                            <div class="cta">
+                                                <div class="inCard">
+                                                    <a href="">Explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uk-transition-toggle">
+                                <div class="project__card">
+                                    <div class="projectCard__image">
+                                        <img src="/images/smallchild.jpg">
+                                    </div>
+                                    <div class="uk-panel">
+                                        <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
+                                            <h4> Relief</h4>
+                                            <div class="cta">
+                                                <div class="inCard">
+                                                    <a href="">Explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="uk-transition-toggle">
+                                <div class="project__card">
+                                    <div class="projectCard__image">
+                                        <img src="/images/program_inauguration.jpg">
+                                    </div>
+                                    <div class="uk-panel">
+                                        <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
+                                            <h4>Jajarkot Relief</h4>
+                                            <div class="cta">
+                                                <div class="inCard">
+                                                    <a href="">Explore</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev home__projectsnav">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </div>
+                <div class="swiper-button-next home__projectsnav">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="newsUpdates uk-margin-xlarge-bottom">
+        <div class="uk-container">
+            <h2>News and Updates</h2>
+            <p>
+                HAPSA regularly shares news and updates on its ongoing efforts to strengthen Nepal’s health system. Stay informed 
+                about our latest projects, community initiatives, health awareness campaigns, and collaborations with government 
+                bodies. Follow our updates to learn how we are driving equitable healthcare solutions and making a positive impact 
+                in local communities.
+            </p>
+
+            <div class="newsUpdates__wrap uk-margin-medium-top uk-grid">
+                <div class="uk-width-2-3">
+                    <a href="" class="post_section">
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <img src="./images/crisis.jpg" >
+                            </div>
+                            <div class="uk-card-body">
+                                <div class="date">May 14, 2021</div>
+                                <h3 class="uk-text-truncate">Facing a COVID Crisis, Nepal Cries Out for Help</h3>
+                                <p>The COVID-19 crisis in Nepal is outpacing the chaos in next door India. In Kathmandu, the best private hospitals are turning patients away for lack of beds and supplies, and in rural parts of the country, where hospitals do not exist, people are dying at home.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="uk-width-1-3">
+                    <a href="" class="post_section">
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <img src="./images/emergency.jpg" >
+                            </div>
+                            <div class="uk-card-body">
+                                <div class="date">April 25, 2020</div>
+                                <h3 class="uk-text-truncate">Emergency Care</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="" class="post_section">
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <img src="./images/emergency.jpg" >
+                            </div>
+                            <div class="uk-card-body">
+                                <div class="date">April 25, 2020</div>
+                                <h3 class="uk-text-truncate">Emergency Care</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="cta">
+                <a class="btn" href="">Explore All</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="home__gallery">
+        <div class="homeGallery__wrap">
+            <div class="homeGallery_image"><img src="./images/earthquakerelief10.jpg" alt=""></div>
+            <div class="homeGallery_image"><img src="./images/earthquakerelief9.jpg" alt=""></div>
+            <div class="homeGallery_image"><img src="./images/earthquakerelief8.jpg" alt=""></div>
+            <div class="homeGallery_image"><img src="./images/earthquakerelief7.jpg" alt=""></div>
+            <div class="homeGallery_image"><img src="./images/earthquakerelief6.jpg" alt=""></div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="uk-container">
+            <div class="uk-child-width-1-4" uk-grid>
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <a href="./index.html" class="uk-logo">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                    </div>
+                    <p>Comprising young professionals from around the world, HAPSA champions equitable health services for all.</p>
+                </div>
+                <div class="footer__section links">
+                    <ul>
+                        <li><a>Quick links</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./news.html">News & Updates</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                        <li><a href="./donate.html">Donate</a></li>
+                        <li><a href="./volunteer.html">Volunteer</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <div class="footer__contactdetails">
+                        <ul>
+                            <li><a>Nepal Office</a></li>
+                            <li><a href="https://maps.app.goo.gl/M3PaCRQDbsrHqJbi7">Buddhanagar, Kathmandu</a></li>
+                            <li><a href="mailto:hapsa4all@gmail.com">hapsa4all@gmail.com</a></li>
+                            <li><a href="tel:+977-9841140403">+977-9841140403</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <div class="cta">
+                        <a href="./donate.html" class="btn">Donate</a>
+                        <a href="./volunteer.html" class="btn">Volunteer</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__disclaimer">
+                <p>HAPSA Nepal is a 501(c)(3) nonprofit organization, EIN 30-1032421. Donations are tax-deductible.</p>
+            </div>
+            <div class="footer__end">
+                <div class="uk-child-width-1-3 uk-grid">
+                    <div class="footerEnd__section uk-flex">
+                        <ul class="uk-flex">
+                            <li>
+                                <a href="" target="_blank">
+                                    <span uk-icon="icon: facebook" class="uk-icon"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <span uk-icon="icon: youtube" class="uk-icon"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank">
+                                    <span uk-icon="icon: instagram" class="uk-icon"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footerEnd__section"></div>
+                    <div class="footerEnd__section">
+                        <ul class=" uk-flex uk-flex-wrap uk-flex-wrap-stretch">
+                            <li><a href="http://" target="_blank">Privacy Policy</a></li>
+                            <li><a>© 2025 HAPSA Nepal. All Rights Reserved.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.21.16/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.21.16/js/uikit-icons.min.js"></script>
+</body>
+</html>
