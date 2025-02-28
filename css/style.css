@@ -543,6 +543,40 @@ nav .uk-navbar-left .uk-navbar-nav li:first-child {
   z-index: 0;
 }
 
+.ongoing .activity__info {
+  padding-right: 32px;
+}
+
+.ongoing .activity__info .activity__title {
+  font-weight: 700;
+}
+
+.gallerySection .uk-thumbnav > * {
+  padding: 0 0 20px 20px;
+}
+
+.gallerySection .uk-thumbnav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallerySection .uk-thumbnav * > ::after {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 70, 110, 0)), color-stop(rgba(0, 70, 110, 0.008)), color-stop(rgba(0, 70, 110, 0.02)), color-stop(rgba(0, 70, 110, 0.601)), color-stop(rgba(0, 70, 110, 0.82)), to(rgba(0, 70, 110, 0.9)));
+  background-image: linear-gradient(rgba(0, 70, 110, 0), rgba(0, 70, 110, 0.008), rgba(0, 70, 110, 0.02), rgba(0, 70, 110, 0.601), rgba(0, 70, 110, 0.82), rgba(0, 70, 110, 0.9));
+  -webkit-transition: 1.2s;
+  transition: 1.2s;
+}
+
+.gallerySection .uk-thumbnav img {
+  width: 112px;
+  height: 72px;
+}
+
+.gallery .gallerySection .uk-slideshow-items {
+  height: 80vh;
+}
+
 .projectsSlider__wrap {
   position: relative;
   padding-bottom: 120px;
@@ -983,28 +1017,5 @@ footer .footerEnd__section .uk-flex {
 
 .team .team__wrap .about__team span {
   line-height: 1.6;
-}
-
-.gallerySection .uk-slideshow-items {
-  height: 80vh;
-}
-
-.gallerySection .uk-thumbnav {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 18px;
-}
-
-.gallerySection .uk-thumbnav * > ::after {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 70, 110, 0)), color-stop(rgba(0, 70, 110, 0.008)), color-stop(rgba(0, 70, 110, 0.02)), color-stop(rgba(0, 70, 110, 0.601)), color-stop(rgba(0, 70, 110, 0.82)), to(rgba(0, 70, 110, 0.9)));
-  background-image: linear-gradient(rgba(0, 70, 110, 0), rgba(0, 70, 110, 0.008), rgba(0, 70, 110, 0.02), rgba(0, 70, 110, 0.601), rgba(0, 70, 110, 0.82), rgba(0, 70, 110, 0.9));
-  -webkit-transition: 1.2s;
-  transition: 1.2s;
-}
-
-.gallerySection .uk-thumbnav img {
-  width: 120px;
-  height: 80px;
 }
 /*# sourceMappingURL=style.css.map */
