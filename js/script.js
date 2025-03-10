@@ -1,6 +1,6 @@
 
 var swiper = new Swiper(".home__projects", {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 40,
     navigation: {
       nextEl: ".home__projectsnav.swiper-button-next",
