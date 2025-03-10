@@ -6,6 +6,19 @@ var swiper = new Swiper(".home__projects", {
       nextEl: ".home__projectsnav.swiper-button-next",
       prevEl: ".home__projectsnav.swiper-button-prev",
     },
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 24
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 24
+      }
+    }
   });
 
 

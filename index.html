@@ -28,7 +28,7 @@
                         <ul class="uk-navbar-nav">
                             <li>
                                 <a href="./index.html" class="uk-navbar-item uk-logo">
-                                    <img class="full" src="/images/logo.png" alt="">
+                                    <img class="full" src="./images/logo.png" alt="">
                                 </a>
                             </li>
                             <li class="uk-active"><a href="./">Home</a></li>
@@ -42,7 +42,7 @@
 
                     </div>
 
-                    <div class="uk-navbar-center">
+                    <div class="uk-navbar-center uk-visible@m">
 
                         <ul class="uk-navbar-nav">
                             
@@ -67,7 +67,52 @@
                 </div>
             </div>
         </nav>
-        
+        <div class="header__mobile uk-hidden@m">
+            <div class="uk-container">
+                <div class="uk-navbar-container">
+                    <nav uk-navbar="" class="uk-navbar">
+                        <div class="uk-navbar-left uk-margin-right">
+                            <a href="./index.html" class="uk-navbar-item uk-logo">
+                                <img src="./images/logo.png">
+                            </a>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <a href="https://www.facebook.com/hapsa4all" class="uk-navbar-item" target="_blank">
+                                <span uk-icon="icon: facebook" class="uk-icon"></span>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCQE7hSKhZ5KR70rhZZ6NPzA" class="uk-navbar-item" target="_blank">
+                                <span uk-icon="icon: youtube" class="uk-icon"></span>
+                            </a>
+                            <a href="https://www.instagram.com/hapsanepal/" class="uk-navbar-item" target="_blank">
+                                <span uk-icon="icon: instagram" class="uk-icon"></span>
+                            </a>
+                            <div class="cta">
+                                <a href="./donate.html" class="btn">Donate</a>
+                            </div>
+                            <a class="uk-navbar-item uk-navbar-toggle" href="#header__mobile" uk-toggle="" aria-expanded="false">
+                              <div uk-navbar-toggle-icon="" class="uk-icon uk-navbar-toggle-icon"></div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div id="header__mobile" uk-offcanvas="" mode="slide" overlay="" class="uk-offcanvas">
+              <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close=""></button>
+                <div class="uk-panel uk-margin-top uk-margin-remove-last-child">
+                    <ul class="uk-nav">
+                        <li class="uk-active"><a href="./">Home</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        
+                        <li><a href="./projects.html">HAPSA Projects</a></li>
+                        <li><a href="./news.html" >News Coverage</a></li>
+                        <li><a href="./gallery.html">Gallery</a></li>
+                        <li><a href="./volunteer.html#faqs">FAQ</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
     </header>
 
     <div class="song__qr" uk-tooltip="title: Scan for CPR Song; delay: 200">
@@ -194,7 +239,7 @@
                             <div class="uk-transition-toggle">  
                                 <div class="project__card">
                                     <div class="projectCard__image">
-                                        <img src="/images/covid19relief.jpg">
+                                        <img src="./images/covid19relief.jpg">
                                     </div>
                                     <div class="uk-panel">
                                         <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
@@ -213,7 +258,7 @@
                             <div class="uk-transition-toggle">
                                 <div class="project__card">
                                     <div class="projectCard__image">
-                                        <img src="/images/melamchirelief1.jpg">
+                                        <img src="./images/melamchirelief1.jpg">
                                     </div>
                                     <div class="uk-panel">
                                         <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
@@ -232,7 +277,7 @@
                             <div class="uk-transition-toggle">
                                 <div class="project__card">
                                     <div class="projectCard__image">
-                                        <img src="/images/melamchirelief2.jpg">
+                                        <img src="./images/melamchirelief2.jpg">
                                     </div>
                                     <div class="uk-panel">
                                         <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
@@ -251,7 +296,7 @@
                             <div class="uk-transition-toggle">
                                 <div class="project__card">
                                     <div class="projectCard__image">
-                                        <img src="/images/melamchirelief3.jpg">
+                                        <img src="./images/melamchirelief3.jpg">
                                     </div>
                                     <div class="uk-panel">
                                         <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
@@ -270,7 +315,7 @@
                             <div class="uk-transition-toggle">
                                 <div class="project__card">
                                     <div class="projectCard__image">
-                                        <img src="/images/smallchild.jpg">
+                                        <img src="./images/smallchild.jpg">
                                     </div>
                                     <div class="uk-panel">
                                         <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
@@ -289,7 +334,7 @@
                             <div class="uk-transition-toggle">
                                 <div class="project__card">
                                     <div class="projectCard__image">
-                                        <img src="/images/program_inauguration.jpg">
+                                        <img src="./images/program_inauguration.jpg">
                                     </div>
                                     <div class="uk-panel">
                                         <div class="uk-position-small uk-position-bottom uk-overlay sliderText">
@@ -345,7 +390,7 @@
                     </div>
                     <div class="uk-width-3-5">
                         <div class="gallerySection">
-                            <div class="uk-position-relative" uk-slideshow="animation: fade; autoplay: true; autoplay-interval: 4000">
+                            <div class="uk-position-relative" uk-slideshow="animation: fade; autoplay: false; autoplay-interval: 4000">
 
                                 <div class="uk-slideshow-items">
                                     <div>
@@ -497,7 +542,7 @@
                 <p>HAPSA Nepal is a 501(c)(3) nonprofit organization, EIN 30-1032421. Donations are tax-deductible.</p>
             </div>
             <div class="footer__end">
-                <div class="uk-child-width-1-3 uk-grid">
+                <div class="uk-child-width-1-3@l uk-child-width-1-2@s uk-grid">
                     <div class="footerEnd__section uk-flex">
                         <ul class="uk-flex">
                             <li>
@@ -517,11 +562,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="footerEnd__section"></div>
+                    <div class="footerEnd__section  uk-visible@l"></div>
                     <div class="footerEnd__section">
                         <ul class=" uk-flex uk-flex-wrap uk-flex-wrap-stretch">
                             <li><a href="http://" target="_blank">Privacy Policy</a></li>
-                            <li><a>© 2025 HAPSA Nepal. All Rights Reserved.</a></li>
+                            <li><a id="copyright"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -535,5 +580,10 @@
     <script src="./js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.21.16/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.21.16/js/uikit-icons.min.js"></script>
+    
+    <script>
+        const copyright = `©${new Date().getFullYear()} HAPSA Nepal. All Rights Reserved.`;
+        document.getElementById("copyright").innerText = copyright;
+    </script>
 </body>
 </html>
