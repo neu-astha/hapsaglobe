@@ -116,28 +116,42 @@
     </header>
 
     <div class="song__qr" uk-tooltip="title: Scan for CPR Song; delay: 200">
-        <a href="https://youtu.be/wzZNU_IFgmc?si=isTfhnJNEJ2ZcGpY" target="_blank" rel="noopener noreferrer">
+        <a href="https://youtu.be/wzZNU_IFgmc?si=isTfhnJNEJ2ZcGpY" target="_blank" >
             <img src="./images/HAPSA CPR QR.png" alt="">
         </a>
     </div>
 
     
-    <div class="music-control">
+    
+    <!-- <div class="music-control homePage">
         <div class="icon">
             <img src="./images/bw3I80awAa.gif" alt="">
         </div>
         <div class="options">
-            <a href="https://youtu.be/wzZNU_IFgmc?si=isTfhnJNEJ2ZcGpY" target="_blank">Watch video</a>
+            <a href="https://youtu.be/wzZNU_IFgmc?si=isTfhnJNEJ2ZcGpY" target="_blank">watch video</a>
             <button id="play-pause-btn">Pause</button>
         </div>
     </div>
 
-    <audio id="background-music" loop>
+    <audio id="background-music" class="audio homePage" loop>
         <source src="./images/trimmedAudio.mp3" type="audio/mpeg">
-    </audio>
+    </audio> -->
+
+    <div class="home_videobanner">
+        
+        <div class="homeVideo__wrap">
+                        
+            <iframe src="https://www.youtube.com/embed/wzZNU_IFgmc?si=KHNo1L50pKi_fGjE?&autoplay=1&loop=1&playlist=wzZNU_IFgmc" allowfullscreen loop uk-video="autoplay: inview"></iframe>
+            <div class="watch__video">
+                <div class="cta">
+                    <a href="https://youtu.be/wzZNU_IFgmc?si=isTfhnJNEJ2ZcGpY" target="_blank" class="btn">Watch CPR Song Video</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    <section class="home_banner">
+    <!-- <section class="home_banner">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade">
 
             <div class="uk-slideshow-items">
@@ -162,7 +176,7 @@
             <a class="uk-position-center-right uk-slidenav-large uk-hidden-hover" href uk-slidenav-next uk-slideshow-item="next"></a>
         
         </div>
-    </section>
+    </section> -->
 
 
     <section class="volunteer">

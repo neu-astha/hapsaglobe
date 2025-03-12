@@ -377,6 +377,54 @@ nav .uk-navbar-left .uk-navbar-nav li:first-child {
   margin-top: 20px;
 }
 
+.home_videobanner {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.home_videobanner .homeVideo__wrap {
+  height: calc(100vh - 112px);
+  width: 100%;
+}
+.home_videobanner .homeVideo__wrap iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 250vh;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.home_videobanner .homeVideo__wrap .watch__video {
+  position: absolute;
+  bottom: 24%;
+}
+.home_videobanner .homeVideo__wrap .watch__video .cta a.btn {
+  min-width: 240px;
+  max-width: 240px;
+}
+@media screen and (min-width: 1600px) {
+  .home_videobanner .homeVideo__wrap .watch__video {
+    left: 160px;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .home_videobanner .homeVideo__wrap .watch__video {
+    left: 40px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .home_videobanner .homeVideo__wrap .watch__video {
+    left: 28px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .home_videobanner .homeVideo__wrap .watch__video {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
 .home_banner .uk-slideshow-items {
   height: calc(100vh - 112px);
 }

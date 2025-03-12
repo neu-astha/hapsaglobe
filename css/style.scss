@@ -437,9 +437,74 @@ nav{
     }
 }
 
+
+.home_videobanner{
+    
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .homeVideo__wrap{
+        
+        height: calc(100vh - 112px);
+        width: 100%;
+        
+        iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 250vh;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            
+        }
+    
+        .watch__video{
+    
+            position: absolute;
+            bottom: 24%;
+    
+            .cta a.btn{
+    
+                min-width: 240px;
+                max-width: 240px;
+            }
+    
+            @media screen and (min-width: 1600px) {
+                
+                left: 160px;
+            }
+            @media screen and (max-width: 1600px) {
+                
+                left: 40px;
+            }
+            @media screen and (max-width: 1025px) {
+                
+                left: 28px;
+            }
+            @media screen and (max-width: 640px) {
+                
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+    }
+
+    // @media screen and (max-width: 560px) {
+    //     display: none;
+    // }
+}
+
 .home_banner .uk-slideshow-items{
 
     height: calc(100vh - 112px);
+    // display: none;
+
+    // @media screen and (max-width: 560px) {
+           
+    //     display: block;
+    // }
 }
 
 .music-control {
@@ -511,6 +576,16 @@ nav{
         visibility: visible;
     
     }
+
+    // &.homePage{
+
+    //     display: none;
+
+    //     @media screen and (max-width: 480px) {
+                
+    //         display: block;
+    //     }
+    // }
 }
 
 
